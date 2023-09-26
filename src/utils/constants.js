@@ -5,15 +5,15 @@ export const comments = [
   },
     {
       user: "Alpha001",
-      comment: "",
+      comment: "Second Comment",
       replies: [
         {
           user: "Beta001",
-          comment: "Thank you",
+          comment: "Second comment reply",
           replies: [
             {
               user: "Gamma01",
-              comment: "laal dil ❤️",
+              comment: "reply to the reply on the second comment",
             },
           ],
         },
@@ -22,24 +22,24 @@ export const comments = [
 
   {
     user: "Mr. Gogo",
-    comment: "AAuuuuu",
+    comment: "Third comment",
     replies: [
       {
         user: "Bob",
-        comment: "Dhaki tiki dhaki tiki",
+        comment: "Third comment reply",
         replies: [
           {
             user: "Jack",
-            comment:"Tod dunga fod dunga",
+            comment:"reply to the reply on the third comment",
         
           },
           {
             user: "Chhotu",
-            comment:"Baba re baba",
+            comment:"reply to the reply on the third comment",
             replies: [
                 {
                     user:"Motu",
-                    comment:"Kya hua kyun thug raha hai",
+                    comment:"reply to...... on the third comment",
 
                 }
             ]

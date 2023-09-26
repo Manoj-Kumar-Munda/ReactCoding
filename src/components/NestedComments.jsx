@@ -7,9 +7,9 @@ const Comment = ({ comment, depthLevel }) => {
     <>
       {comment.replies ? (
         <>
-          <div className={`relative ml-2`}>
-            <h1>{comment.user}</h1>
-            <p className="text-sm">{comment.comment}</p>
+          <div className={`relative ml-4`}>
+            <h1 className="font-semibold">{comment.user}</h1>
+            <p className="text-sm font-semibold text-gray-600">{comment.comment}</p>
 
             {comment.replies.map((item, index) => (
               <Comment comment={item} depthLevel={depthLevel+1} key={index} />
@@ -17,9 +17,9 @@ const Comment = ({ comment, depthLevel }) => {
           </div>
         </>
       ) : (
-        <div className={`relative ml-2`}>
-          <h1>{comment.user}</h1>
-          <p className="text-sm">{comment.comment}</p>
+        <div className={`relative ml-4`}>
+          <h1 className="font-semibold">{comment.user}</h1>
+          <p className="text-sm font-semibold text-gray-600">{comment.comment}</p>
         </div>
       )}
     </>
@@ -28,7 +28,7 @@ const Comment = ({ comment, depthLevel }) => {
 
 const NestedComments = () => {
   return (
-    <div className="">
+    <div>
       {comments.map((item, index) => (
         <Comment comment={item} key={index} depthLevel={0} />
       ))}
